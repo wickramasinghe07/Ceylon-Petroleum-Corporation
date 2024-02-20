@@ -1,5 +1,9 @@
 # Ceylon-Petroleum-Corporation ⛽
 
+Purpose
+The purpose of this is to know how much oil is in the filling station in front of us when we are on a certain journey. After knowing, we can calculate the required number and get it. It is another matter that we can know whether we have the necessary oils.
+
+
 
 Creating a Mobile App that helps to find out how much oil is available in nearby oil filling stations. 
                                                ⛽
