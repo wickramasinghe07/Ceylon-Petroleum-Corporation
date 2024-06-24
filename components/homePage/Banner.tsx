@@ -22,11 +22,6 @@ import {
   buttonContainedStyle,
   buttonTextStyle,
 } from "./styles";
-import { url } from "inspector";
-import { link } from "fs";
-
-
-
 
 /* Banner functional component */
 const Banner = () => {

@@ -127,7 +127,7 @@ export const Blog2 = {
   contactNowDescription:
     "From powering industries to fueling your daily commute, trust in Ceypetco for reliable, high-quality fuel that keeps you moving forward with confidence.",
     contactNowCaption: "Ceylon Petroleum Corporation",
-    contactNowVedioLink: "https://www.youtube.com/watch?v=RzaoWTSSj7E"
+    contactNowVedioLink: "https://youtu.be/RzaoWTSSj7E?si=rCwScRoBqS3VrCEs"
 };
 
 

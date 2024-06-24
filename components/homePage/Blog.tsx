@@ -5,7 +5,6 @@ import {
 import React from "react";;
 import { blogCardData } from "../../data/homePage";
 import { blogSection } from "../../data/homePage";
-import BlogCard from "./BlogCard";
 
 /* Styles for typography - Heading 1 */
 const typographyh1Styles = {
@@ -49,12 +48,6 @@ const Blog = () => {
           <Grid key={item.id} item xs={12} sm={6} md={4}>
             <>
               {/* Destination card details component */}
-              <BlogCard
-                vedioURL={item.vedioURL}
-                city={item.city}
-                description={item.description}
-                price={item.price}
-              />
             </>
           </Grid>
         ))}
