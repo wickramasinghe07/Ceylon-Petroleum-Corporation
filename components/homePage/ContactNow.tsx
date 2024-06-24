@@ -18,6 +18,7 @@ const ContactNowBanner = () => {
         justifyContent="center"
         alignItems="center"
         spacing={3}
+
       >
         {/* Left side of the contactNow banner */}
         <Grid item xs={12} md={6}>

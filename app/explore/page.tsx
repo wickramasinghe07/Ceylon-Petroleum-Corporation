@@ -1,8 +1,7 @@
 "use client";
 import { Box, Container } from "@mui/material";
-import HotelRooms from "@/components/explore/GoogleMap"; // Importing HotelRooms component from the 'explore' folder
-import SearchBar from "@/components/explore/SearchBar"; // Importing SearchBar component from the 'explore' folder
-import HeroSection from "@/components/explore/HeroSection"; // Importing HeroSection component from the 'explore' folder
+import SearchBar from "@/components/gasstationdetails/SearchBar"; // Importing SearchBar component from the 'explore' folder
+import HeroSection from "@/components/gasstationdetails/HeroSection"; // Importing HeroSection component from the 'explore' folder
 
 /**
  * ExploreScreen component represents the explore screen of the website.
@@ -50,19 +49,6 @@ const ExploreScreen = ({
       >
         <Container>
           <SearchBar />
-        </Container>
-      </Box>
-
-      {/* Hotel Rooms Section */}
-      <Box sx={{ backgroundColor: "#FFF", padding: "40px 0", width: "100%" }}>
-        <Container>
-          <HotelRooms
-            query={query}
-            roomType={roomType}
-            bedSizes={bedSizes}
-            guest={guest}
-          />
-          {/* pass the query to Hotel room component*/}
         </Container>
       </Box>
     </>

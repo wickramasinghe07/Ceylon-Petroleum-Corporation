@@ -91,7 +91,7 @@ const Testimonials = () => {
   return (
     <>
       <Grid
-        marginTop="25px"
+        marginTop="10px"
         container
         direction="row"
         justifyContent="center"
@@ -158,7 +158,7 @@ const Testimonials = () => {
                 {/* User's rating */}
                 <Rating name="read-only" value={value} readOnly />
                 {/* User's testimonial description */}
-                <Typography variant="body2"  style={typographyCardStyle}>
+                <Typography variant="body2" style={typographyCardStyle}>
                   {userTestimonial.testimonial1}
                 </Typography>
               </CardContent>
@@ -197,36 +197,35 @@ const Testimonials = () => {
               </CardContent>
             </Card>
           </Box>
-          
-          
         </Grid>
-        
-        </Grid>
-        
-    <Stack spacing={2} direction="row" justifyContent="flex-end">
-    <Link href={userTestimonial.testimonialButtonLink} target="_blank">
-      <Button 
-            
+      </Grid>
+
+      <Stack spacing={2} direction="row" justifyContent="flex-end">
+        <Link href={userTestimonial.testimonialButtonLink} target="_blank">
+          <Button
             variant="contained"
-              style={{
-                background: "var(--l-2, linear-gradient(135deg, #8482FF 0%, #7723FE 100%))",
-                borderRadius: "45px",
-                color: "#FFF",
-                fontSize: "14px",
-                lineHeight: "180%",
-                fontStyle: "normal",
-                letterSpacing: "-0.14px",
-                fontWeight: "500",
-                marginBottom:"25px",
-                marginTop:"25px",
-                textTransform: "none",
-              }}
+            style={{
+              background:
+                "var(--l-2, linear-gradient(135deg, #F5B100 0%, #000 100%))",
+              borderRadius: "45px",
+              color: "#FFF",
+              fontSize: "14px",
+              lineHeight: "180%",
+              fontStyle: "normal",
+              letterSpacing: "-0.14px",
+              fontWeight: "500",
+              marginBottom: "25px",
+              marginTop: "25px",
+              textTransform: "none",
+            }}
           >
             {userTestimonial.testimonialButtonText}
-            <LaunchIcon sx={{ color: "#FFFFFF" ,  fontSize: "15px", marginLeft:"8px"}} />
+            <LaunchIcon
+              sx={{ color: "#FFFFFF", fontSize: "15px", marginLeft: "8px" }}
+            />
           </Button>
-          </Link>
-    </Stack>
+        </Link>
+      </Stack>
     </>
   );
 };
