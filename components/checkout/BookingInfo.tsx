@@ -38,7 +38,7 @@ const BookingInfo = () => {
           border: "1px solid",
           borderColor: "#E1E1E1",
           maxWidth: "400px",
-          height: "auto",
+          height: "700px",
         }}
       >
         <Box

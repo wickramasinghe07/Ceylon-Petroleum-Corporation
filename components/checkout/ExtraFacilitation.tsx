@@ -23,7 +23,7 @@ const ExtraFacilitation = () => {
         elevation={0}
         sx={{
           height: "auto",
-          maxWidth: "816px",
+          maxWidth: "916px",
           border: "1px solid",
           borderRadius: "8px",
           borderColor: "var(--light-separators-colors-secondary, #E1E1E1)",

@@ -30,7 +30,7 @@ const DrawerComponent = () => {
         onClose={() => setOpenDrawer(false)}
         PaperProps={{
           sx: {
-            backgroundColor: "#0C111F",
+            backgroundColor: "#1e1e1e0",
             width: { xs: "150px", sm: "168px" },
           },
         }}
@@ -49,7 +49,7 @@ const DrawerComponent = () => {
             >
               <ListItemIcon>
                 <ListItemText
-                  sx={{ color: "#FFF" }}
+                  sx={{ color: "#000" }}
                   primary={page.label} // Use primary prop to set the text content
                   onClick={() => navigationToScreens(page.route)}
                 ></ListItemText>

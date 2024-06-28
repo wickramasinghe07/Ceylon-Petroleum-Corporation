@@ -13,10 +13,9 @@ addressLbl: "Address",
 /* Assign data to the booking information card of the checkout page */
 export const bookingInfoCard = {
     roomTitle: "HEMANTHA J A - Hambegamuwa",
-    date: "14 June 2024",
     checkIcon1: "Petrol",
     checkIcon2: "Diesel",
-    checkIcon3: "Gss",
+    checkIcon3: "Gas",
     priceTitle: "Total Liter",
     price: "12000 L",
 };

@@ -3,9 +3,9 @@ import { url } from "inspector";
 /* Assign Page routes and labels for navigation bar component of the website */
 export const pages = [
   { label: "Home", route: "/" },
-  { label: "Explore", route: "/explore" },
+  { label: "Map", route: "/explore" },
   { label: "Gas Station Details", route: "/checkout" },
-  { label: "Contact", route: "/contact-us" },
+  // { label: "Contact", route: "/contact-us" },
   { label: "Blog", route: "/blog"}
 ];
 
@@ -18,9 +18,9 @@ export const navBarButtons = {
 /* Assign array of pages and their corresponding routes to the navigation drawer component of the website */
 export const drawerPages = [
   { label: "Home", route: "/" },
-  { label: "Explore", route: "/explore" },
+  { label: "Map", route: "/explore" },
   { label: "Gas Station Details", route: "/checkout" },
-  { label: "Contact", route: "/contact-us" },
+  // { label: "Contact", route: "/contact-us" },
   { label: "Blog", route: "/blog"},
   // { label: "Register", route: "/register" },  //TEMPORARY REMOVE
   // { label: "Login", route: "/login" }, // TEMPORARY REMOVE
@@ -85,7 +85,7 @@ export const clientLogos = [
 
 /* Assign title and description to blog section of home page */
 export const blogSection = {
-  blogSectionTitle: "Our Features",
+  blogSectionTitle: "",
   blogSectionDescription:
     "",
 };

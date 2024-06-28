@@ -98,15 +98,15 @@ const NavBar = () => {
 
   return (
     <>
-     {/* Container to hold the content and align it */}
-      <AppBar 
-      position="static" 
-      elevation={0} 
-      sx={{ 
-        backgroundColor: "#0C111F",
-         paddingTop: "20px",
-         }}
-         >
+      {/* Container to hold the content and align it */}
+      <AppBar
+        position="static"
+        elevation={0}
+        sx={{
+          backgroundColor: "#1e1e1e",
+          paddingTop: "20px",
+        }}
+      >
         {/* Container to hold the content and align it */}
         <Container>
           {/* Toolbar holds the content within the AppBar */}
@@ -132,11 +132,11 @@ const NavBar = () => {
                   onChange={handleChange}
                   textColor="inherit"
                   indicatorColor="secondary"
-                  TabIndicatorProps={{ 
+                  TabIndicatorProps={{
                     style: { backgroundColor: "#c7833e" },
-                   }}
+                  }}
                 >
-                 {/* Map through pages to create Tabs for navigation */}
+                  {/* Map through pages to create Tabs for navigation */}
                   {pages.map((page, index) => (
                     <Tab
                       key={index}

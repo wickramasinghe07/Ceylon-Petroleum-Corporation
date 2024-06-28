@@ -6,8 +6,8 @@ import {  Blog2 } from "../../data/homePage";
 import { lora } from "../../app/fonts";
 //import styles from styles.js file
 import { typographyh1Style, typographyBody1Style, buttonContainedStyle } from './styles';
-
-
+import Image from "next/image";
+import {frac, heart} from "../../public/images/homePage/customCardImages";
 /* contactNow Banner functional component */
 const ContactNowBanner = () => {
   return (
@@ -18,7 +18,6 @@ const ContactNowBanner = () => {
         justifyContent="center"
         alignItems="center"
         spacing={3}
-
       >
         {/* Left side of the contactNow banner */}
         <Grid item xs={12} md={6}>
@@ -53,7 +52,7 @@ const ContactNowBanner = () => {
               {/* Arrow icon */}
               <Box
                 sx={{
-                  backgroundColor: "#0C111F",
+                  backgroundColor: "#",
                   width: "32px",
                   height: "32px",
                   borderRadius: "58px",
@@ -68,17 +67,18 @@ const ContactNowBanner = () => {
           </Box>
         </Grid>
         {/* Right side of the contactNow - vedio */}
-        <Grid item xs={12} md={6}>
-          <iframe
-            frameBorder="0"
-            src={Blog2.contactNowVedioLink}
+        <Grid item xs={12} md={6} lg={6}>
+          <Image
+            src={frac}
+            alt="test"
+            width={617.758}
+            height={616.951}
             style={{
               width: "100%",
-              height: "320px",
+              height: "auto",
               flexShrink: 0,
-              borderRadius: "20px",
             }}
-          ></iframe>
+          />
         </Grid>
       </Grid>
     </>
