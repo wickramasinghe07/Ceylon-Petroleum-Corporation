@@ -1,6 +1,12 @@
 # SLC Open HMS (Next.js)
 
+Web Design
+
 ![Screenshot 2024-07-03 123049](https://github.com/wickramasinghe07/Ceylon-Petroleum-Corporation/assets/102098023/5906a5d0-9b7b-44f9-9541-03c7b0a25283)
+
+Mobile Design
+
+![Screenshot 2024-07-03 123850](https://github.com/wickramasinghe07/Ceylon-Petroleum-Corporation/assets/102098023/5b312566-2277-44a3-a3aa-491edeee09f1)
 
 
 The SLC-Open-HMS is a web application built with Next.js that aims to streamline and optimize hotel operations, including reservations, room management, guest services, and more. This application provides an intuitive and efficient solution for hotel owners and staff to manage various aspects of their hotel business.
