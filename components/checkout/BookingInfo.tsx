@@ -38,7 +38,7 @@ const BookingInfo = () => {
           border: "1px solid",
           borderColor: "#E1E1E1",
           maxWidth: "400px",
-          height: "auto",
+          height: "700px",
         }}
       >
         <Box
@@ -92,7 +92,7 @@ const BookingInfo = () => {
                 marginTop: "22px",
               }}
             >
-              {bookingInfoCard.date}
+              {/* {bookingInfoCard.date} */}
             </Typography>
             {/* Check icons */}
             <Box sx={{ display: "flex", alignItems: "center" }}>

@@ -3,9 +3,9 @@ import { url } from "inspector";
 /* Assign Page routes and labels for navigation bar component of the website */
 export const pages = [
   { label: "Home", route: "/" },
-  { label: "Explore", route: "/explore" },
+  { label: "Map", route: "/explore" },
   { label: "Gas Station Details", route: "/checkout" },
-  { label: "Contact", route: "/contact-us" },
+  // { label: "Contact", route: "/contact-us" },
   { label: "Blog", route: "/blog"}
 ];
 
@@ -18,9 +18,9 @@ export const navBarButtons = {
 /* Assign array of pages and their corresponding routes to the navigation drawer component of the website */
 export const drawerPages = [
   { label: "Home", route: "/" },
-  { label: "Explore", route: "/explore" },
+  { label: "Map", route: "/explore" },
   { label: "Gas Station Details", route: "/checkout" },
-  { label: "Contact", route: "/contact-us" },
+  // { label: "Contact", route: "/contact-us" },
   { label: "Blog", route: "/blog"},
   // { label: "Register", route: "/register" },  //TEMPORARY REMOVE
   // { label: "Login", route: "/login" }, // TEMPORARY REMOVE
@@ -85,7 +85,7 @@ export const clientLogos = [
 
 /* Assign title and description to blog section of home page */
 export const blogSection = {
-  blogSectionTitle: "Our Features",
+  blogSectionTitle: "",
   blogSectionDescription:
     "",
 };
@@ -156,14 +156,14 @@ export const footerContent = {
   footerSectionLogoImage: "/images/homePage/footerImages/logoDark.webp",
   footerSectionDescription:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat elit sed pretium, egestas sed sit orem ipsum dolor sit amet,",
-  footerSectionText1: "Products",
-  destination1: "Product 1",
-  destination2: "Product 2",
-  destination3: "Product 3",
+  footerSectionText1: "Information",
+  destination1: "Annual Reports",
+  destination2: "Specifications of Fuel Products",
+  destination3: "Regional Offices",
   footerSectionText2: "About",
   customText1: "Contact Us",
-  customText2: "Testimoni",
-  customText3: "Rating",
+  customText2: "Feedback",
+  customText3: "Public Tenders",
   footerSectionText3: "Follow Us",
   socialMediaIcon1: "/images/homePage/footerImages/facebook.webp",
   socialMediaText1: "Facebook",
@@ -172,6 +172,9 @@ export const footerContent = {
   socialMediaText2: "Twitter",
   socialMediaLink2: "",
   socialMediaIcon3: "/images/homePage/footerImages/instagram.webp",
+  socialLocationIcon3: "/images/homePage/footerImages/location.webp",
+  socialEmailIcon: "/images/homePage/footerImages/email.webp",
+  socialPhoneIcon: "/images/homePage/footerImages/phone.webp",
   socialMediaText3: "Instagram",
   socialMediaLink3: "",
   TermsConditionText: "Terms and Conditions",

@@ -41,11 +41,11 @@ const BlogCard: React.FC<BlogCardProps> = ({ image, author, date, title, descrip
 
   return (
     <>
-    {/* blog card */}
+      {/* blog card */}
       <Card
         elevation={0}
         sx={{
-            marginTop:"10px",
+          marginTop: "10px",
           borderColor: "var(--light-separators-colors-secondary, #E1E1E1)",
           maxWidth: "384px",
           height: "auto",
@@ -72,39 +72,47 @@ const BlogCard: React.FC<BlogCardProps> = ({ image, author, date, title, descrip
         </Box>
         {/* card content */}
         <CardContent>
-          
-            <Box sx={{ display: "flex",  }}>
-              {/* title section of the card  */}
-            <Typography sx={{fontSize:"24px",}}> {title} </Typography>
-            </Box>
-            <Box>{description}</Box>
-            
-    <Box sx={{
-      marginLeft:"200px",
-      justifyContent: "flex-end"}}>       
-    <Link href={"/blog-detail"}>
-      <Button 
-            sx={{fontSize: {md:"14px", xs:"10px"},}}
-            variant="contained"
-              style={{
-                background: "var(--l-2, linear-gradient(135deg, #8482FF 0%, #7723FE 100%))",
-                borderRadius: "45px",
-                color: "#FFF",
-                lineHeight: "180%",
-                fontStyle: "normal",
-                letterSpacing: "-0.14px",
-                fontWeight: "500",
-                marginBottom:"25px",
-                marginTop:"25px",
-                textTransform: "none",
-              }}
-          >
-            Read more
-            <LaunchIcon sx={{ color: "#FFFFFF" ,  fontSize: {md:"14px", xs:"10px"}, marginLeft:"8px"}} />
-          </Button>
-          </Link>
+          <Box sx={{ display: "flex" }}>
+            {/* title section of the card  */}
+            <Typography sx={{ fontSize: "24px" }}> {title} </Typography>
           </Box>
-      
+          <Box>{description}</Box>
+
+          <Box
+            sx={{
+              marginLeft: "200px",
+              justifyContent: "flex-end",
+            }}
+          >
+            <Link href={"/blog-detail"}>
+              <Button
+                sx={{ fontSize: { md: "14px", xs: "10px" } }}
+                variant="contained"
+                style={{
+                  background:
+                    "var(--l-2, linear-gradient(135deg, #8B0000 10%, #fff 100%))",
+                  borderRadius: "45px",
+                  color: "#FFF",
+                  lineHeight: "180%",
+                  fontStyle: "normal",
+                  letterSpacing: "-0.14px",
+                  fontWeight: "500",
+                  marginBottom: "25px",
+                  marginTop: "25px",
+                  textTransform: "none",
+                }}
+              >
+                Read more
+                <LaunchIcon
+                  sx={{
+                    color: "#FFFFFF",
+                    fontSize: { md: "14px", xs: "10px" },
+                    marginLeft: "8px",
+                  }}
+                />
+              </Button>
+            </Link>
+          </Box>
         </CardContent>
       </Card>
     </>

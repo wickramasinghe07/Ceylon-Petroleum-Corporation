@@ -49,7 +49,7 @@ const AdminDrawerComponent = () => {
             >
               <ListItemIcon>
                 <ListItemText
-                  sx={{ color: "#FFF" }}
+                  sx={{ color: "#000" }}
                   primary={page.label} // Use primary prop to set the text content
                   onClick={() => navigationToScreens(page.route)}
                 ></ListItemText>
@@ -60,7 +60,7 @@ const AdminDrawerComponent = () => {
       </Drawer>
       {/* IconButton for opening the drawer */}
       <IconButton
-        sx={{ color: "#FFF", marginLeft: "auto" }}
+        sx={{ color: "#000", marginLeft: "auto" }}
         onClick={() => setOpenDrawer(!openDrawer)}
       >
         <MenuIcon />

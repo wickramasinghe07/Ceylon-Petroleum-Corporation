@@ -98,29 +98,29 @@ const NavBar = () => {
 
   return (
     <>
-     {/* Container to hold the content and align it */}
-      <AppBar 
-      position="static" 
-      elevation={0} 
-      sx={{ 
-        backgroundColor: "#0C111F",
-         paddingTop: "20px",
-         }}
-         >
+      {/* Container to hold the content and align it */}
+      <AppBar
+        position="static"
+        elevation={0}
+        sx={{
+          backgroundColor: "#1e1e1e",
+          paddingTop: "20px",
+        }}
+      >
         {/* Container to hold the content and align it */}
         <Container>
           {/* Toolbar holds the content within the AppBar */}
           <Toolbar disableGutters>
             {/* Display the logo image on larger screens */}
             <Box sx={{ display: { xs: "none", md: "flex" } }}>
-              <Image src={logo} width={200} height={180} alt="logo" />
+              <Image src={logo} width={130} height={120} alt="logo" />
             </Box>
 
             {/* Conditionally render either DrawerComponent or Tabs/Button based on screen size */}
             {isMatch ? (
               <>
                 {/* Display the logo image and DrawerComponent on smaller screens */}
-                <Image src={logo} width={200} height={185} alt="logo" />
+                <Image src={logo} width={85} height={80} alt="logo" />
                 <DrawerComponent />
               </>
             ) : (
@@ -132,11 +132,11 @@ const NavBar = () => {
                   onChange={handleChange}
                   textColor="inherit"
                   indicatorColor="secondary"
-                  TabIndicatorProps={{ 
+                  TabIndicatorProps={{
                     style: { backgroundColor: "#c7833e" },
-                   }}
+                  }}
                 >
-                 {/* Map through pages to create Tabs for navigation */}
+                  {/* Map through pages to create Tabs for navigation */}
                   {pages.map((page, index) => (
                     <Tab
                       key={index}

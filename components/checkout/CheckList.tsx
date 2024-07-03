@@ -22,7 +22,7 @@ const CheckList = () => {
         "& ul": { padding: 0 },
       }}
     >
-      {[0, 1, 2, 3, 4].map((value) => {
+      {[0, 1, 2].map((value) => {
         const labelId = `checkbox-list-label-${value}`;
 
         return (

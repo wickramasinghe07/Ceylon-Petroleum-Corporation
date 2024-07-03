@@ -26,7 +26,7 @@ export default function HomeScreen() {
       {/* Banner Section */}
       <Box
         sx={{
-          backgroundColor: "#0C111F",
+          backgroundColor: "	#3c3c3c",
           color: "white",
           padding: "40px 0",
           flexGrow: 1,
@@ -56,7 +56,7 @@ export default function HomeScreen() {
       </Box>
       {/* Contact Now Banner  */}
       <Box
-        sx={{ backgroundColor: "#0C111F", color: "white", padding: "40px 0" }}
+        sx={{ backgroundColor: "#000", color: "white", padding: "40px 0" }}
       >
         <Container>
           <ContactNowBanner />

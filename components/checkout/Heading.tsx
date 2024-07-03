@@ -10,7 +10,7 @@ const Heading = () => {
   return (
     <>
       <Grid container>
-        <Grid item xs={12} sm={6} md={6} lg={4} xl={4}>
+        <Grid item xs={12} sm={6} md={12} lg={12} xl={12}>
           <Typography
             variant="h1"
             className={lora.className}
