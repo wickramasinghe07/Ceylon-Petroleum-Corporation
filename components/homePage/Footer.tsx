@@ -412,7 +412,7 @@ const Footer = () => {
                   marginTop: "5px",
                 }}
               >
-                secratariat[at]ceypetco.gov.lk
+                {footerContent.socialMediaText4}
               </Typography>
             </Box>
             <Box sx={{ display: "flex" }}>

@@ -2,6 +2,7 @@
 import { Box, Container } from "@mui/material";
 import SearchBar from "@/components/gasstationdetails/SearchBar"; // Importing SearchBar component from the 'explore' folder
 import HeroSection from "@/components/gasstationdetails/HeroSection"; // Importing HeroSection component from the 'explore' folder
+import GoogleMap from "@/components/gasstationdetails/GoogleMap";
 
 /**
  * ExploreScreen component represents the explore screen of the website.
@@ -39,7 +40,6 @@ const ExploreScreen = ({
           <HeroSection />
         </Container>
       </Box>
-
       {/* Search Bar Section */}
       <Box
         sx={{
@@ -49,6 +49,16 @@ const ExploreScreen = ({
       >
         <Container>
           <SearchBar />
+        </Container>
+      </Box>
+      <Box
+        sx={{
+          backgroundColor: "#FFF",
+          width: "100%",
+        }}
+      >
+        <Container>
+          <GoogleMap />
         </Container>
       </Box>
     </>

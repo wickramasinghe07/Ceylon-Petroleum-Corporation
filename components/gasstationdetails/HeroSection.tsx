@@ -8,7 +8,7 @@ const HeroSection = () => {
     <>
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
-          <Box sx={{ paddingTop: { xs: "25px", sm: "50px", md: "50px" } }}>
+          <Box sx={{ paddingTop: { xs: "15px", sm: "50px", md: "50px" } }}>
             <Typography
               variant="h1"
               className={lora.className}
