@@ -113,14 +113,14 @@ const NavBar = () => {
           <Toolbar disableGutters>
             {/* Display the logo image on larger screens */}
             <Box sx={{ display: { xs: "none", md: "flex" } }}>
-              <Image src={logo} width={200} height={180} alt="logo" />
+              <Image src={logo} width={130} height={120} alt="logo" />
             </Box>
 
             {/* Conditionally render either DrawerComponent or Tabs/Button based on screen size */}
             {isMatch ? (
               <>
                 {/* Display the logo image and DrawerComponent on smaller screens */}
-                <Image src={logo} width={200} height={185} alt="logo" />
+                <Image src={logo} width={85} height={80} alt="logo" />
                 <DrawerComponent />
               </>
             ) : (

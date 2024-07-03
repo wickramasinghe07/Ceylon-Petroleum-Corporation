@@ -92,7 +92,7 @@ const BookingInfo = () => {
                 marginTop: "22px",
               }}
             >
-              {bookingInfoCard.date}
+              {/* {bookingInfoCard.date} */}
             </Typography>
             {/* Check icons */}
             <Box sx={{ display: "flex", alignItems: "center" }}>

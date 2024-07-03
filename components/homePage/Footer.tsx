@@ -12,24 +12,29 @@ const Footer = () => {
     <>
       <Grid container spacing={2}>
         {/* Grid item for logo and description */}
-        <Grid item xs={12} md={3}
-        sx={{
-          marginTop: { xs: "24px", md: "20px" },
-        }}>
+        <Grid
+          item
+          xs={12}
+          md={3}
+          sx={{
+            marginTop: { xs: "24px", md: "20px" },
+          }}
+        >
           <Box>
-            <Link href ="/"><Image
-            
-              src={footerContent.footerSectionLogoImage}
-              width={150}
-              height={150}
-              alt="logo"
-            /></Link>
+            <Link href="https://ceypetco.gov.lk/">
+              <Image
+                src={footerContent.footerSectionLogoImage}
+                width={60}
+                height={55}
+                alt="logo"
+              />
+            </Link>
           </Box>
           <Box>
             <Typography
               variant="body2"
               style={{
-                color: '#FFFFFF',
+                color: "#FFFFFF",
                 fontFamily: "Inter",
                 fontSize: "16px",
                 lineHeight: "30px",
@@ -59,7 +64,7 @@ const Footer = () => {
             <Typography
               variant="body2"
               style={{
-                color: '#FFFFFF',
+                color: "#FFFFFF",
                 fontFamily: "Inter",
                 fontSize: "16px",
                 lineHeight: "normal",
@@ -74,7 +79,7 @@ const Footer = () => {
               variant="body2"
               className={montserrat.className}
               style={{
-                color: '#FFFFFF',
+                color: "#FFFFFF",
                 fontFamily: "Montserrat, sans-serif",
                 fontSize: "14px",
                 lineHeight: "28px",
@@ -83,13 +88,18 @@ const Footer = () => {
                 marginTop: "15px",
               }}
             >
-             <Link href="/product/product-1" style={{ color: "white", textDecoration:"none"}}>{footerContent.destination1}</Link>
+              <Link
+                href="https://ceypetco.gov.lk/annual-reports/"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                {footerContent.destination1}
+              </Link>
             </Typography>
             <Typography
               variant="body2"
               className={montserrat.className}
               style={{
-                color: '#FFFFFF',
+                color: "#FFFFFF",
                 fontFamily: "Montserrat, sans-serif",
                 fontSize: "14px",
                 lineHeight: "28px",
@@ -98,13 +108,18 @@ const Footer = () => {
                 marginTop: "5px",
               }}
             >
-              <Link href="/product/product-2" style={{ color: "white", textDecoration:"none"}}>{footerContent.destination2}</Link>
+              <Link
+                href="https://ceypetco.gov.lk/wp-content/uploads/Marketing-Sepecifictions.pdf"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                {footerContent.destination2}
+              </Link>
             </Typography>
             <Typography
               variant="body2"
               className={montserrat.className}
               style={{
-                color: '#FFFFFF',
+                color: "#FFFFFF",
                 fontFamily: "Montserrat, sans-serif",
                 fontSize: "14px",
                 lineHeight: "28px",
@@ -113,7 +128,12 @@ const Footer = () => {
                 marginTop: "5px",
               }}
             >
-              <Link href="/product/product-3" style={{ color: "white", textDecoration:"none"}}>{footerContent.destination3}</Link>
+              <Link
+                href="https://ceypetco.gov.lk/area-offices/"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                {footerContent.destination3}
+              </Link>
             </Typography>
           </Box>
         </Grid>
@@ -133,7 +153,7 @@ const Footer = () => {
             <Typography
               variant="body2"
               style={{
-                color: '#FFFFFF',
+                color: "#FFFFFF",
                 fontFamily: "Inter",
                 fontSize: "16px",
                 lineHeight: "normal",
@@ -148,7 +168,7 @@ const Footer = () => {
               variant="body2"
               className={montserrat.className}
               style={{
-                color: '#FFFFFF',
+                color: "#FFFFFF",
                 fontFamily: "Montserrat, sans-serif",
                 fontSize: "14px",
                 lineHeight: "28px",
@@ -157,13 +177,19 @@ const Footer = () => {
                 marginTop: "15px",
               }}
             >
-             <Link href="/contact-us" style={{ color: "white", textDecoration:"none"}}> {footerContent.customText1}</Link>
+              <Link
+                href="https://ceypetco.gov.lk/contact-us-2/"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                {" "}
+                {footerContent.customText1}
+              </Link>
             </Typography>
             <Typography
               variant="body2"
               className={montserrat.className}
               style={{
-                color: '#FFFFFF',
+                color: "#FFFFFF",
                 fontFamily: "Montserrat, sans-serif",
                 fontSize: "14px",
                 lineHeight: "28px",
@@ -172,13 +198,18 @@ const Footer = () => {
                 marginTop: "5px",
               }}
             >
-              <Link href="/"style={{ color: "white", textDecoration:"none"}}>{footerContent.customText2}</Link>
+              <Link
+                href="https://docs.google.com/forms/d/e/1FAIpQLSffXF5T3HdHOkQ7sml9n_k6_IZq_M-jls2awMVM0btTmIsmEw/viewform"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                {footerContent.customText2}
+              </Link>
             </Typography>
             <Typography
               variant="body2"
               className={montserrat.className}
               style={{
-                color: '#FFFFFF',
+                color: "#FFFFFF",
                 fontFamily: "Montserrat, sans-serif",
                 fontSize: "14px",
                 lineHeight: "28px",
@@ -187,7 +218,12 @@ const Footer = () => {
                 marginTop: "5px",
               }}
             >
-              <Link href="/"style={{ color: "white", textDecoration:"none"}}>{footerContent.customText3}</Link>
+              <Link
+                href="https://ceypetco.gov.lk/public-tenders/"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                {footerContent.customText3}
+              </Link>
             </Typography>
           </Box>
         </Grid>
@@ -207,7 +243,7 @@ const Footer = () => {
             <Typography
               variant="body2"
               style={{
-                color: '#FFFFFF',
+                color: "#FFFFFF",
                 fontFamily: "Inter",
                 fontSize: "16px",
                 lineHeight: "normal",
@@ -233,8 +269,7 @@ const Footer = () => {
                 variant="body2"
                 className={montserrat.className}
                 style={{
-                  
-                  color: '#FFFFFF',
+                  color: "#FFFFFF",
                   fontFamily: "Montserrat, sans-serif",
                   fontSize: "14px",
                   lineHeight: "28px",
@@ -244,7 +279,14 @@ const Footer = () => {
                   marginTop: "15px",
                 }}
               >
-               <a href={footerContent.socialMediaLink1} target="_blank" style={{ color: "white", textDecoration:"none"}}> {footerContent.socialMediaText1}</a>
+                <a
+                  href={footerContent.socialMediaLink1}
+                  target="_blank"
+                  style={{ color: "white", textDecoration: "none" }}
+                >
+                  {" "}
+                  {footerContent.socialMediaText1}
+                </a>
               </Typography>
             </Box>
             <Box sx={{ display: "flex" }}>
@@ -262,7 +304,7 @@ const Footer = () => {
                 variant="body2"
                 className={montserrat.className}
                 style={{
-                  color: '#FFFFFF',
+                  color: "#FFFFFF",
                   fontFamily: "Montserrat, sans-serif",
                   fontSize: "14px",
                   lineHeight: "28px",
@@ -272,8 +314,14 @@ const Footer = () => {
                   marginTop: "5px",
                 }}
               >
-              {/* creates the link to the socila media <twitter> */}
-                <a href={footerContent.socialMediaLink2} target="_blank" style={{ color: "white", textDecoration:"none"}}>{footerContent.socialMediaText2}</a>
+                {/* creates the link to the socila media <twitter> */}
+                <a
+                  href={footerContent.socialMediaLink2}
+                  target="_blank"
+                  style={{ color: "white", textDecoration: "none" }}
+                >
+                  {footerContent.socialMediaText2}
+                </a>
               </Typography>
             </Box>
             <Box sx={{ display: "flex" }}>
@@ -291,7 +339,7 @@ const Footer = () => {
                 variant="body2"
                 className={montserrat.className}
                 style={{
-                  color: '#FFFFFF',
+                  color: "#FFFFFF",
                   fontFamily: "Montserrat, sans-serif",
                   fontSize: "14px",
                   lineHeight: "28px",
@@ -301,7 +349,96 @@ const Footer = () => {
                   marginTop: "5px",
                 }}
               >
-                <a href={footerContent.socialMediaLink3} target="_blank" style={{ color: "white", textDecoration:"none"}}>{footerContent.socialMediaText3}</a>
+                <a
+                  href={footerContent.socialMediaLink3}
+                  target="_blank"
+                  style={{ color: "white", textDecoration: "none" }}
+                >
+                  {footerContent.socialMediaText3}
+                </a>
+              </Typography>
+            </Box>
+          </Box>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <Box>
+            {" "}
+            <Box sx={{ display: "flex" }}>
+              <Image
+                src={footerContent.socialLocationIcon3}
+                width={19}
+                height={19}
+                alt="fb"
+                style={{
+                  flexShrink: 0,
+                  marginTop: "8px",
+                }}
+              />
+              <Typography
+                style={{
+                  color: "#FFFFFF",
+                  fontFamily: "Montserrat, sans-serif",
+                  fontSize: "14px",
+                  lineHeight: "28px",
+                  fontStyle: "normal",
+                  fontWeight: "400",
+                  marginLeft: "12px",
+                  marginTop: "5px",
+                }}
+              >
+                No.609, Dr. Danister de Silva Mawatha, Colombo 09.
+              </Typography>
+            </Box>
+            <Box sx={{ display: "flex" }}>
+              <Image
+                src={footerContent.socialEmailIcon}
+                width={19}
+                height={19}
+                alt="fb"
+                style={{
+                  flexShrink: 0,
+                  marginTop: "8px",
+                }}
+              />
+              <Typography
+                style={{
+                  color: "#FFFFFF",
+                  fontFamily: "Montserrat, sans-serif",
+                  fontSize: "14px",
+                  lineHeight: "28px",
+                  fontStyle: "normal",
+                  fontWeight: "400",
+                  marginLeft: "12px",
+                  marginTop: "5px",
+                }}
+              >
+                secratariat[at]ceypetco.gov.lk
+              </Typography>
+            </Box>
+            <Box sx={{ display: "flex" }}>
+              <Image
+                src={footerContent.socialPhoneIcon}
+                width={19}
+                height={19}
+                alt="fb"
+                style={{
+                  flexShrink: 0,
+                  marginTop: "8px",
+                }}
+              />
+              <Typography
+                style={{
+                  color: "#FFFFFF",
+                  fontFamily: "Montserrat, sans-serif",
+                  fontSize: "14px",
+                  lineHeight: "28px",
+                  fontStyle: "normal",
+                  fontWeight: "400",
+                  marginLeft: "12px",
+                  marginTop: "5px",
+                }}
+              >
+                +94 11 5455455
               </Typography>
             </Box>
           </Box>
@@ -322,7 +459,7 @@ const Footer = () => {
               <Typography
                 variant="body2"
                 style={{
-                  color: '#FFFFFF',
+                  color: "#FFFFFF",
                   fontFamily: "Inter",
                   fontSize: "15px",
                   lineHeight: "normal",
@@ -345,7 +482,7 @@ const Footer = () => {
               <Typography
                 variant="body2"
                 style={{
-                  color: '#FFFFFF',
+                  color: "#FFFFFF",
                   fontFamily: "Inter",
                   fontSize: "15px",
                   lineHeight: "normal",
@@ -356,12 +493,17 @@ const Footer = () => {
                   marginLeft: "auto",
                 }}
               >
-                <Link href={footerContent.TermsConditionLink} style={{ color: "white", textDecoration:"none"}}>{footerContent.TermsConditionText}</Link>
+                <Link
+                  href={footerContent.TermsConditionLink}
+                  style={{ color: "white", textDecoration: "none" }}
+                >
+                  {footerContent.TermsConditionText}
+                </Link>
               </Typography>
               <Typography
                 variant="body2"
                 style={{
-                  color: '#FFFFFF',
+                  color: "#FFFFFF",
                   fontFamily: "Inter",
                   fontSize: "15px",
                   lineHeight: "normal",
@@ -372,7 +514,12 @@ const Footer = () => {
                   marginLeft: "4%",
                 }}
               >
-                <Link href={footerContent.PrivacyPolicyLink}style={{ color: "white", textDecoration:"none"}}>{footerContent.PrivacyPolicyText}</Link>
+                <Link
+                  href={footerContent.PrivacyPolicyLink}
+                  style={{ color: "white", textDecoration: "none" }}
+                >
+                  {footerContent.PrivacyPolicyText}
+                </Link>
               </Typography>
             </Box>
           </Box>
