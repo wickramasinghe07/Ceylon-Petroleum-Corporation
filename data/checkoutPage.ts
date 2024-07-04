@@ -8,7 +8,7 @@ export const heading = {
 /* Assign Data to the billing details form of the checkout page*/
 export const billingDetailsForm = {
 billingDetailsFormTitle: "Gas Station Details",
-addressLbl: "Address",
+addressLbl: "Your Location",
 }
 /* Assign data to the booking information card of the checkout page */
 export const bookingInfoCard = {

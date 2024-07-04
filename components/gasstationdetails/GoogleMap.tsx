@@ -29,6 +29,7 @@ function Map() {
     setMap(null);
   }, []);
 
+  
   return isLoaded ? (
     <GoogleMap
       mapContainerStyle={containerStyle}

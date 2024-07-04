@@ -2,15 +2,15 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
-import { Button, Grid } from '@mui/material';
+import { Button, Grid, Typography } from '@mui/material';
 import { useRouter } from "next/navigation";
 
 export default function CountrySelect() {
   const router = useRouter();
 
 
-  const navigationToCheckOut = () => {
-    router.push("/checkout");
+  const navigationToGoogleMap = () => {
+    router.push("../map");
   };
 
   return (
@@ -18,7 +18,7 @@ export default function CountrySelect() {
       <Grid item xs={12} marginTop={10}>
         <Autocomplete
           id="country-select-demo"
-          sx={{ width: 300 }}
+          sx={{ width: "auto" }}
           options={countries}
           autoHighlight
           getOptionLabel={(option) => option.label}
@@ -41,7 +41,7 @@ export default function CountrySelect() {
           renderInput={(params) => (
             <TextField
               {...params}
-              label="Choose a country"
+              label="Pick up Location"
               inputProps={{
                 ...params.inputProps,
                 autoComplete: "new-password", // disable autocomplete and autofill
@@ -50,10 +50,42 @@ export default function CountrySelect() {
           )}
         />
       </Grid>
-      <Grid item xs={12} marginTop={5}>
+      <Grid xs={12} md={12} lg={6} xl={6}>
+        <Box display="flex" alignContent="center" mt={2}>
+          <Button
+            onClick={navigationToGoogleMap}
+            sx={{
+              my: 2,
+              textTransform: "none",
+              marginTop: "7px",
+              justifyContent: "center",
+              backgroundColor: "",
+              color: "white",
+              width: "auto",
+              height: "auto",
+              borderRadius: "8px",
+              textAlign: "center",
+              borderColor: "#5B5959",
+              "&:hover": {
+                backgroundColor: "	#F6C324",
+              },
+            }}
+            variant="outlined"
+          >
+            <Typography
+              style={{
+                color: "#000",
+              }}
+            >
+              Current Location
+            </Typography>
+          </Button>
+        </Box>
+      </Grid>
+      <Grid item xs={12} marginTop={2}>
         <Autocomplete
           id="country-select-demo"
-          sx={{ width: 300 }}
+          sx={{ width: "auto" }}
           options={countries}
           autoHighlight
           getOptionLabel={(option) => option.label}
@@ -76,7 +108,7 @@ export default function CountrySelect() {
           renderInput={(params) => (
             <TextField
               {...params}
-              label="Choose a Town"
+              label="I am going to"
               inputProps={{
                 ...params.inputProps,
                 autoComplete: "new-password", // disable autocomplete and autofill
@@ -85,15 +117,75 @@ export default function CountrySelect() {
           )}
         />
       </Grid>
-      <Grid item xs={6} md={6} lg={6}>
-        <Button
-          onClick={navigationToCheckOut}
-          variant="contained"
-          color="success"
-          sx={{ my: 2 }}
-        >
-          Ok
-        </Button>
+      <Grid xs={12} md={12} lg={6} xl={6}>
+        <Box display="flex" alignContent="center" mt={2}>
+          <Button
+            onClick={navigationToGoogleMap}
+            sx={{
+              my: 2,
+              textTransform: "none",
+              marginTop: "7px",
+              justifyContent: "center",
+              backgroundColor: "",
+              color: "white",
+              width: "auto",
+              height: "auto",
+              borderRadius: "8px",
+              textAlign: "center",
+              borderColor: "#5B5959",
+              "&:hover": {
+                backgroundColor: "	#F6C324",
+              },
+            }}
+            variant="outlined"
+          >
+            <Typography
+              style={{
+                color: "#000",
+              }}
+            >
+              Set on Location
+            </Typography>
+          </Button>
+        </Box>
+      </Grid>
+      <Grid xs={12} md={12} lg={12} xl={12}>
+        <Box display="flex" justifyContent="center" alignItems="center">
+          <Button
+            onClick={navigationToGoogleMap}
+            sx={{
+              my: 2,
+              textTransform: "none",
+              marginTop: "7px",
+              justifyContent: "center",
+              backgroundColor: "	#F6C324",
+              color: "white",
+              width: "200px",
+              height: "fullWidth",
+              borderRadius: "8px",
+              textAlign: "center",
+              borderColor: "#5B5959",
+              "&:hover": {
+                backgroundColor: "	#F6C324",
+              },
+            }}
+            variant="outlined"
+          >
+            <Typography
+              variant="h1"
+              style={{
+                fontSize: "16px",
+                lineHeight: "120%",
+                fontStyle: "normal",
+                letterSpacing: "0.08px",
+                fontWeight: "700",
+                color: "#000",
+              }}
+            >
+              Search
+            </Typography>
+          </Button>
+        </Box>
       </Grid>
     </Grid>
   );

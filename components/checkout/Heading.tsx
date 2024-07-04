@@ -16,7 +16,7 @@ const Heading = () => {
             className={lora.className}
             style={{
               color: "var(--light-text-color-title, #11142D)",
-              fontSize: "62px",
+              fontSize: "55px",
               lineHeight: "120%",
               fontStyle: "normal",
               letterSpacing: "0.186px",
