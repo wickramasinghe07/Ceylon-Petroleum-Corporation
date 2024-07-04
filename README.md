@@ -34,7 +34,7 @@ Follow these instructions to set up the Hotel Management System project locally 
 1. Clone the repository to your local machine:
  ```bash
 https://github.com/wickramasinghe07/Ceylon-Petroleum-Corporation.git
-cd  slc-open-hms
+cd  front end
  ```
 2. Instal Node modules and dependencies : 
 
