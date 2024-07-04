@@ -90,7 +90,10 @@ npm install react-phone-input-2 --save
 npm install leaflet
 npm i leaflet-control-geocoder@1.8.3
  ```
-
+- This package contains type definitions for google.maps - Version 3.55.11
+  ```bash
+  npm install --save @types/google.maps
+  
 3. Set up the environment variables:
   - Create a .env.local file in the root directory of the project.
   - Add the required environment variables, such as database connection strings, API keys, etc.
