@@ -37,23 +37,23 @@ const BookingInfo = () => {
           borderRadius: "8px",
           border: "1px solid",
           borderColor: "#E1E1E1",
-          maxWidth: "400px",
-          height: "600px",
+          maxWidth: "600px",
+          height: "610px",
         }}
       >
         <Box
           style={{
             position: "relative",
-            maxWidth: "400px",
-            margin: "0 auto",
+            maxWidth: "800px",
+            
           }}
         >
           {/* Image of the room */}
           <Image
             src={"/images/gasStation/room2.webp"}
             alt="test"
-            width={400}
-            height={330}
+            width={800}
+            height={430}
             style={{
               width: "100%",
               height: "330px",

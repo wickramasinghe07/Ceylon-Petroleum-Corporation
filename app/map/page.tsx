@@ -2,10 +2,17 @@
 "use client";
 import React from "react";
 import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
-import { Grid, Box, Button, Typography, useMediaQuery } from "@mui/material";
+import { Grid, Container, Typography, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import { useRouter } from "next/router";
+import MapButton from "@/components/map/MapButton";
 
+
+/**
+ * Map component is used to display the map in the Google Map page.
+ */
+
+
+// Center of the map
 const center = {
   lat: -3.745,
   lng: -38.523,
@@ -49,14 +56,8 @@ function Map() {
 
   const onUnmount = React.useCallback(function callback(map: google.maps.Map) {
     setMap(null);
+
   }, []);
-
-  const handleConfirmClick = () => {
-    console.log("Confirm button clicked!");
-    // Add your custom logic here
-  };
-
-
   return (
     <Grid container spacing={2}>
       <Grid item xs={12} md={12} lg={12} xl={12}>
@@ -72,49 +73,17 @@ function Map() {
           <Typography variant="h6">Loading map...</Typography>
         )}
       </Grid>
-      <Grid item xs={12} md={12} lg={12} xl={12}>
-        <Box
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-          height="100%"
-        >
-          <Button
-            sx={{
-              my: 2,
-              textTransform: "none",
-              marginTop: "7px",
-              justifyContent: "center",
-              backgroundColor: "#F6C324",
-              color: "white",
-              width: "200px",
-              height: "fullWidth",
-              borderRadius: "8px",
-              textAlign: "center",
-              borderColor: "#5B5959",
-              "&:hover": {
-                backgroundColor: "#F6C324",
-              },
-            }}
-            variant="outlined"
-            onClick={handleConfirmClick}
-          >
-            <Typography
-              variant="h1"
-              sx={{
-                fontSize: "16px",
-                lineHeight: "120%",
-                fontStyle: "normal",
-                letterSpacing: "0.08px",
-                fontWeight: "700",
-                color: "#000",
-              }}
-            >
-              Confirm
-            </Typography>
-          </Button>
-        </Box>
-      </Grid>
+      <Container>
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={12} lg={6}>
+            <MapButton />
+            {/* <BookingDetailsForm /> */}
+            {/* <ServicesCard /> */}
+          </Grid>
+          <Grid item xs={12} md={4}>
+          </Grid>
+        </Grid>
+      </Container>
     </Grid>
   );
 }
