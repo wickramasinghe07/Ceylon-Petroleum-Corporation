@@ -5,8 +5,10 @@ import "react-date-range/dist/styles.css"; // Import the styles
 import "react-date-range/dist/theme/default.css";
 import { mulish } from "../../app/fonts";
 import { termsText } from "@/data/checkoutPage";
-import { Grid, Card } from "@mui/material";
+import { Grid, Card, Button } from "@mui/material";
+import Checkbox from "@mui/material/Checkbox";
 
+const label = { inputProps: { "aria-label": "Checkbox demo" } };
 const TermAndCondition = () => {
   return (
     <Grid>
@@ -17,7 +19,7 @@ const TermAndCondition = () => {
           border: "1px solid",
           borderColor: "#E1E1E1",
           maxWidth: "auto",
-          height: "230px",
+          height: "auto",
         }}
       >
         {/* Terms and Conditions */}
@@ -49,9 +51,10 @@ const TermAndCondition = () => {
             letterSpacing: "0.08px",
             fontWeight: "400",
             marginTop: "16px",
-            textAlign: "center",
+
           }}
         >
+          <Checkbox {...label} />
           {termsText.term1}
         </Typography>
         <Typography
@@ -65,9 +68,10 @@ const TermAndCondition = () => {
             letterSpacing: "0.08px",
             fontWeight: "400",
             marginTop: "16px",
-            textAlign: "center",
+
           }}
         >
+          <Checkbox {...label} />
           {termsText.term2}
         </Typography>
         <Typography
@@ -81,11 +85,28 @@ const TermAndCondition = () => {
             letterSpacing: "0.08px",
             fontWeight: "400",
             marginTop: "16px",
-            textAlign: "center",
+            textAlign: "left",
           }}
         >
+          <Checkbox {...label} />
           {termsText.term3}
         </Typography>
+        <Button 
+        variant="contained"
+        sx={{
+          backgroundColor: "#C7833E",
+          color: "#FFFFFF",
+          borderRadius: "8px",
+          width: "75%",
+          height: "48px",
+          marginTop: "16px",
+          marginBottom: "16px",
+          textTransform: "none",
+          marginLeft: "50px",
+        }}
+        >
+          Submit
+        </Button>
       </Card>
     </Grid>
   );
