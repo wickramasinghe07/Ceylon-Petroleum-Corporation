@@ -93,6 +93,10 @@ npm i leaflet-control-geocoder@1.8.3
 - This package contains type definitions for google.maps - Version 3.55.11
   ```bash
   npm install --save @types/google.maps
+
+-ReactQuill 2 is here, baby! And it brings a full port to TypeScript and React 16+, a refactored build system, and a general tightening of the internal logic - Version 2.0.0
+ ```bash
+ npm install react-quill --save
   
 3. Set up the environment variables:
   - Create a .env.local file in the root directory of the project.
