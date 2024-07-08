@@ -97,7 +97,14 @@ npm i leaflet-control-geocoder@1.8.3
 -ReactQuill 2 is here, baby! And it brings a full port to TypeScript and React 16+, a refactored build system, and a general tightening of the internal logic - Version 2.0.0
  ```bash
  npm install react-quill --save
-  
+ ```
+-Install the package in your project directory with: - 5.0.0-alpha.171 
+  ```bash
+  npm list @mui/lab
+  npm install @mui/lab@latest
+  npm install --save-dev @types/mui__lab
+ ```
+
 3. Set up the environment variables:
   - Create a .env.local file in the root directory of the project.
   - Add the required environment variables, such as database connection strings, API keys, etc.
