@@ -2,7 +2,8 @@
 import { Box, Container } from "@mui/material";
 import SearchBar from "@/components/gasstationdetails/SearchBar"; // Importing SearchBar component from the 'explore' folder
 import HeroSection from "@/components/gasstationdetails/HeroSection"; // Importing HeroSection component from the 'explore' folder
-
+import GoogleMap from "@/components/gasstationdetails/GoogleMap";
+import ConfirmCard from "@/components/gasstationdetails/ConfirmCard";
 /**
  * ExploreScreen component represents the explore screen of the website.
  * It includes sections like Hero section, Search bar, and Hotel rooms.
@@ -39,7 +40,6 @@ const ExploreScreen = ({
           <HeroSection />
         </Container>
       </Box>
-
       {/* Search Bar Section */}
       <Box
         sx={{
@@ -49,6 +49,28 @@ const ExploreScreen = ({
       >
         <Container>
           <SearchBar />
+        </Container>
+      </Box>
+      {/* Google Map Section */}
+      <Box
+        sx={{
+          backgroundColor: "#FFF",
+          width: "100%",
+        }}
+      >
+        <Container>
+          <GoogleMap />
+        </Container>
+      </Box>
+      {/* Confirm Card Section */}
+      <Box
+        sx={{
+          backgroundColor: "#FFF",
+          width: "100%",
+        }}
+      >
+        <Container>
+          <ConfirmCard />
         </Container>
       </Box>
     </>

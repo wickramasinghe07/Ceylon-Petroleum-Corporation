@@ -146,21 +146,21 @@ const NavBar = () => {
                   ))}
                 </Tabs>
                 {/* Button for Register - TEMPORARY REMOVE*/}
-                {/* <Button 
+                <Button 
                 variant="text" 
                 onClick={navigationToRegisterPage} 
                 sx={textButtonStyles}
                 >
                   {navBarButtons.navBarcta1Caption}
-                </Button> */}
+                </Button>
                 {/* Button for Login -  TEMPORARY REMOVE*/}
-                {/* <Button 
+                <Button 
                 variant="contained" 
                 onClick={navigationToLoginPage} 
                 sx={containedButtonStyles}
                 >
                   {navBarButtons.navBarcta2Caption}
-                </Button> */}
+                </Button>
               </>
             )}
           </Toolbar>

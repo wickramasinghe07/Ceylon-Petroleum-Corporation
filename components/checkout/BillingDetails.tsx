@@ -44,8 +44,8 @@ const BillingDetails = () => {
       <Card
         elevation={0}
         sx={{
-          // height: "650px",
-          // maxWidth: "500px",
+          height: "auto",
+          maxWidth: "auto",
           border: "1px solid",
           borderRadius: "8px",
           borderColor: "#E1E1E1",
@@ -85,10 +85,10 @@ const BillingDetails = () => {
                 </Typography>
                 <TextField
                   id="outlined-basic"
-                  placeholder="Input your Address in Here"
+                  placeholder="Input your Location in Here"
                   variant="outlined"
                   sx={{
-                    width: "50%",
+                    width: "auto",
                     height: "32px",
                     marginTop: "10px",
                     marginBottom: "30px",
@@ -98,24 +98,38 @@ const BillingDetails = () => {
               </Grid>
             </Grid>
           </form>
-          <Button 
-            variant="contained" 
+          <Button
+            variant="contained"
             style={{
-              backgroundColor: "#FF5C00",
+              backgroundColor: "#F6C324",
               color: "#FFFFFF",
-              width: "20%",
-              height: "48px",
+              width: "auto",
+              height: "auto",
               marginTop: "2px",
               marginLeft: "10%",
             }}
-          >Submit</Button>
+          >
+            <Typography
+              variant="h1"
+              className={mulish.className}
+              style={{
+                fontSize: "16px",
+                lineHeight: "120%",
+                fontStyle: "normal",
+                letterSpacing: "0.08px",
+                fontWeight: "700",
+                color: "#000",
+              }} >     
+            Confirm
+          </Typography>
+          </Button>
         </CardContent>
         <img
           src="/images/gasStation/room3.webp"
           alt="Billing Details"
           style={{
             width: "100%",
-            height: "100%",
+            height: "350px",
             flexShrink: 0,
           }}
         />

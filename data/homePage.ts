@@ -176,6 +176,7 @@ export const footerContent = {
   socialEmailIcon: "/images/homePage/footerImages/email.webp",
   socialPhoneIcon: "/images/homePage/footerImages/phone.webp",
   socialMediaText3: "Instagram",
+  socialMediaText4: "secratariat@ceypetco.gov.lk",
   socialMediaLink3: "",
   TermsConditionText: "Terms and Conditions",
   TermsConditionLink: "/terms-condition",

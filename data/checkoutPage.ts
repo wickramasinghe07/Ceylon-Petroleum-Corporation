@@ -8,7 +8,7 @@ export const heading = {
 /* Assign Data to the billing details form of the checkout page*/
 export const billingDetailsForm = {
 billingDetailsFormTitle: "Gas Station Details",
-addressLbl: "Address",
+addressLbl: "Your Location",
 }
 /* Assign data to the booking information card of the checkout page */
 export const bookingInfoCard = {
@@ -47,7 +47,7 @@ export const checkListText= {
 /* Assign data to the terms and condition content */
 export const termsText={
 termTitle: "Terms and Conditions",
-term1: "Input your Special term-1 in Here",
-term2: "Input your Special term-2 in Here",
-term3: "Input your Special term-3 in Here",
+term1: "How would you rate the quality of service you received today?",
+term2: "How satisfied are you with the quality of the fuel provided?",
+term3: "How do our fuel prices compare to other stations you visit?",
 }
