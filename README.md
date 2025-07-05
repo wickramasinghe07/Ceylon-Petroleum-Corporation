@@ -8,8 +8,25 @@ Mobile Design
 
 ![Screenshot 2024-07-03 123850](https://github.com/wickramasinghe07/Ceylon-Petroleum-Corporation/assets/102098023/5b312566-2277-44a3-a3aa-491edeee09f1)
 
+## Research 	Question ?
 
 How can we check a gas station’s fuel availability before visiting, and how do we report customer issues directly to the fuel company
+
+## Background
+
+Fuel and vehicles play a crucial role in human life, being essential for meeting transportation needs.
+
+In Sri Lanka, the demand for fuel is increasing due to factors such as population growth, urbanization, and economic development.
+
+Efficient and convenient access to fuel stations is imperative to meet this growing demand while minimizing fuel wastage and enhancing the user experience.
+
+Household consumers rely on the over 1302 CPC gas stations nationwide to fulfill their fuel requirements.
+
+Despite the widespread presence of fuel stations across the country, consumers often face difficulties in locating stations that offer their desired fuel types.
+
+This leads to time inefficiencies and potential resource wastage as individuals may need to travel longer distances to find suitable stations.
+
+
 
 ## Features
 
